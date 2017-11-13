@@ -1,0 +1,79 @@
+﻿
+Q: 怎么改变控件的焦点顺序?
+A: 在Qt Designer的工具栏中点击“编辑Tab顺序”图标，然后依次点击各个控件前的数字框即可！
+
+
+Q: 怎么设置组件随窗体大小变化而变化？
+A: 在Qt Designer中
+
+1) 你要有一个窗体容器（废话！~ 窗体不管是MainWindow还是Widget类型都可以。）
+
+2) 放置一个你需要全屏填充这个容器的组件(如TabWidget)。
+
+3) 随便点击这个组件外的空白区域。
+
+4) 在窗体上右键 > 布局 > 水平布局 / 垂直布局
+或者依次单击菜单栏：窗体 > 水平布局 / 垂直布局
+
+
+Q: 使用GridLayout布局时，怎么合并控件占用的单元格？
+A: 拖动控件边缘，跨越到你想要合并的单元格即可！
+
+
+Q: 怎么加载Qt Designer设计的UI
+A: # 方案一：初始化UI和响应事件 // 缺点是UI控件对象变成了当前self的间接属性，即self.ui的属性
+# self.init_ui()
+# self.handle_ui_action()
+
+# 方案二：参考 http://blog.csdn.net/chlk118/article/details/72595325，直接使用PyQt5的uic来加载并解析UI文件
+uic.loadUi(resource_path('finance_business_exchange_file_viewer.ui'), self)
+
+Q: 调整UI布局中控件之间边缘间距
+A:
+# self.gridLayout.setSpacing(5)
+self.gridLayout.setVerticalSpacing(0)
+self.gridLayout.setHorizontalSpacing(5)
+self.gridLayout_2.setSpacing(5)
+
+
+Q: 怎么删除Qt Designer给控件添加的默认信号/槽连接?
+A: 在Qt Designer的工具栏中点击“编辑信号/槽”图标，然后窗体上右击选中“选择所有”，这样会把所有的信号/槽连接都删除掉！
+包括你自己手动在Qt Designer中建立的信号/槽连接！！！
+
+
+Q: 没有文档和PyQt源码的情况下怎么查看PyQt那些组件的内置信号(signal)？
+A: 在Qt Designer中打开右下角的 信号/槽编辑器 面板，添加想要查看信号的发送者，然后在信号下拉列表里可以看到所有内置信号！
+
+
+Q: 怎么重用已有的logging配置？
+A: 在最开始启动的模块中初始化一个全局root级别的logging配置，后续只需要在模块中加上下面两行代码即可！
+    import logging
+    # 注：不要在后续重用log配置的模块中在这行代码的getLogger方法中加上任何字符串参数，否则后续模块中输出不了log！
+    log = logging.getLogger()
+
+
+Q: Python与Matplotlib均安装成功，但运行pyspot.com上的PyQt5 Matplotlib 例子在Windows 7, Python 3.5.2 下时报如下错误，怎么解决？
+
+G:\workshop\Python\PyQt\matplotlib>python demo.py
+Traceback (most recent call last):
+  File "demo.py", line 7, in <module>
+    import matplotlib.pyplot as plt
+  File "C:\Apply\Python\Python35\lib\site-packages\matplotlib\pyplot.py", line 114, in <module>
+    _backend_mod, new_figure_manager, draw_if_interactive, _show = pylab_setup()
+  File "C:\Apply\Python\Python35\lib\site-packages\matplotlib\backends\__init__.py", line 32, in pylab_setup
+    globals(),locals(),[backend_name],0)
+  File "C:\Apply\Python\Python35\lib\site-packages\matplotlib\backends\backend_tkagg.py", line 6, in <module>
+    from matplotlib.externals.six.moves import tkinter as Tk
+  File "C:\Apply\Python\Python35\lib\site-packages\matplotlib\externals\six.py", line 90, in __get__
+    result = self._resolve()
+  File "C:\Apply\Python\Python35\lib\site-packages\matplotlib\externals\six.py", line 113, in _resolve
+    return _import_module(self.mod)
+  File "C:\Apply\Python\Python35\lib\site-packages\matplotlib\externals\six.py", line 80, in _import_module
+    __import__(name)
+ImportError: No module named 'tkinter'
+
+A: 原因：安装Python 3.5.2时未勾选
+“tcl/tk and IDLE
+Installs tkinter and the IDLE development environment.”
+选项，即tkinter并没有安装。
+解决办法：重装PYthon 3.5.2，将tkinter模块一并安装。

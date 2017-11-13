@@ -1,0 +1,7 @@
+
+
+v0.2
+-----
+* Rename project
+* Migrate to Python 3  // Done.
+* Add Postgres and SQLite support  //

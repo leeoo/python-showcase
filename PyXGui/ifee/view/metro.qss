@@ -1,0 +1,24 @@
+/***********************************************************************
+My Custom Qt Style Sheet
+***********************************************************************/
+
+QPushButton {
+    color: white;
+    background-color: #ABC123;
+    border: none;
+    text-align: center
+}
+QPushButton:hover, QPushButton:pressed, QPushButton:checked {
+    color: green;
+    background-color: #ABC123;
+    font: bold;
+    font-weight: 30;
+}
+
+QLineEdit {
+    color: green
+}
+
+QComboBox {
+    color: blue
+}

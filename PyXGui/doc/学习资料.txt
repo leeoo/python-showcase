@@ -1,0 +1,26 @@
+
+
+PyQt学习笔记
+
+PyQt学习笔记(1)——Hello world
+http://blog.sina.com.cn/s/blog_4b5039210100gxw5.html
+
+PyQt学习笔记(2)——Dumb Dialogs
+http://blog.sina.com.cn/s/blog_4b5039210100gxw6.html
+
+PyQt学习笔记(3)——Standard Dialogs
+http://blog.sina.com.cn/s/blog_4b5039210100gxw7.html
+
+PyQt学习笔记(4)——Smart Dialogs
+http://blog.sina.com.cn/s/blog_4b5039210100gxw8.html
+
+PyQt学习笔记(5)——Mian Window
+http://blog.sina.com.cn/s/blog_4b5039210100gxw9.html
+
+PyQt学习笔记(6)——Actions and Key Sequences
+http://blog.sina.com.cn/s/blog_4b5039210100gxwb.html
+
+PyQt学习笔记(7)——Qt Designer(1)
+http://blog.sina.com.cn/s/blog_4b5039210100gxxy.html
+
+

@@ -1,0 +1,96 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'personalManagement.ui'
+#
+# Created: Sat Nov  9 19:32:22 2013
+#      by: PyQt5 UI code generator 5.1.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_TabWidget(object):
+    def setupUi(self, TabWidget):
+        TabWidget.setObjectName("TabWidget")
+        TabWidget.resize(759, 494)
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.tabWidget_2 = QtWidgets.QTabWidget(self.tab)
+        self.tabWidget_2.setGeometry(QtCore.QRect(0, 0, 861, 601))
+        self.tabWidget_2.setObjectName("tabWidget_2")
+        self.tab_4 = QtWidgets.QWidget()
+        self.tab_4.setObjectName("tab_4")
+        self.tableView = QtWidgets.QTableView(self.tab_4)
+        self.tableView.setGeometry(QtCore.QRect(10, 20, 461, 341))
+        self.tableView.setObjectName("tableView")
+        self.tabWidget_2.addTab(self.tab_4, "")
+        self.tab_5 = QtWidgets.QWidget()
+        self.tab_5.setObjectName("tab_5")
+        self.tableView_2 = QtWidgets.QTableView(self.tab_5)
+        self.tableView_2.setGeometry(QtCore.QRect(10, 10, 521, 371))
+        self.tableView_2.setObjectName("tableView_2")
+        self.tabWidget_2.addTab(self.tab_5, "")
+        self.tab_6 = QtWidgets.QWidget()
+        self.tab_6.setObjectName("tab_6")
+        self.tableView_3 = QtWidgets.QTableView(self.tab_6)
+        self.tableView_3.setGeometry(QtCore.QRect(10, 10, 561, 401))
+        self.tableView_3.setObjectName("tableView_3")
+        self.tabWidget_2.addTab(self.tab_6, "")
+        self.tab_7 = QtWidgets.QWidget()
+        self.tab_7.setObjectName("tab_7")
+        self.tableView_4 = QtWidgets.QTableView(self.tab_7)
+        self.tableView_4.setGeometry(QtCore.QRect(0, 0, 591, 431))
+        self.tableView_4.setObjectName("tableView_4")
+        self.tabWidget_2.addTab(self.tab_7, "")
+        TabWidget.addTab(self.tab, "")
+        self.tab1 = QtWidgets.QWidget()
+        self.tab1.setObjectName("tab1")
+        self.tabWidget = QtWidgets.QTabWidget(self.tab1)
+        self.tabWidget.setGeometry(QtCore.QRect(0, 0, 861, 601))
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.tableView_5 = QtWidgets.QTableView(self.tab_2)
+        self.tableView_5.setGeometry(QtCore.QRect(0, 0, 256, 192))
+        self.tableView_5.setObjectName("tableView_5")
+        self.tabWidget.addTab(self.tab_2, "")
+        self.tab_3 = QtWidgets.QWidget()
+        self.tab_3.setObjectName("tab_3")
+        self.tableView_6 = QtWidgets.QTableView(self.tab_3)
+        self.tableView_6.setGeometry(QtCore.QRect(0, 0, 256, 192))
+        self.tableView_6.setObjectName("tableView_6")
+        self.tabWidget.addTab(self.tab_3, "")
+        self.tab_8 = QtWidgets.QWidget()
+        self.tab_8.setObjectName("tab_8")
+        self.tableView_7 = QtWidgets.QTableView(self.tab_8)
+        self.tableView_7.setGeometry(QtCore.QRect(0, 0, 256, 192))
+        self.tableView_7.setObjectName("tableView_7")
+        self.tabWidget.addTab(self.tab_8, "")
+        self.tab_9 = QtWidgets.QWidget()
+        self.tab_9.setObjectName("tab_9")
+        self.tableView_8 = QtWidgets.QTableView(self.tab_9)
+        self.tableView_8.setGeometry(QtCore.QRect(0, 0, 256, 192))
+        self.tableView_8.setObjectName("tableView_8")
+        self.tabWidget.addTab(self.tab_9, "")
+        TabWidget.addTab(self.tab1, "")
+
+        self.retranslateUi(TabWidget)
+        TabWidget.setCurrentIndex(0)
+        self.tabWidget_2.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(TabWidget)
+
+    def retranslateUi(self, TabWidget):
+        _translate = QtCore.QCoreApplication.translate
+        TabWidget.setWindowTitle(_translate("TabWidget", "个人管理系统"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_4), _translate("TabWidget", "收入"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_5), _translate("TabWidget", "支出"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_6), _translate("TabWidget", "加班报销"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_7), _translate("TabWidget", "余额宝"))
+        TabWidget.setTabText(TabWidget.indexOf(self.tab), _translate("TabWidget", "财务管理"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("TabWidget", "PDF"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("TabWidget", "Mobi"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), _translate("TabWidget", "ePub"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_9), _translate("TabWidget", "TXT"))
+        TabWidget.setTabText(TabWidget.indexOf(self.tab1), _translate("TabWidget", "ebook管理"))
+

@@ -1,0 +1,51 @@
+
+# 模块
+======
+- Account
+- Investment / Financial management
+- Fee
+- Book
+- Favorite
+
+
+# 需求
+======
++ TODO管理
++ 将账户管理的列表选项卡内的组件布局做成大小自适应容器大小变化
+    Done. // 先将组件放在内层的布局，再用外层布局来包裹各布局/组件。
++ 给各列表页面加上增删改查功能
++ 各列表页面均做成分页，每页只显示20条即可
++ 各列表页面均做成隔行变色(即奇偶行颜色各异)
+    Done. // 设置QTableWidget的上层父类QAbstractItemView的属性alternatingRowColors的值为True即可。
++ 给列表的表头加上排序功能
+        // 设置QTableWidget的上层父类QTableView的属性sortingEnabled的值为True。
++ 默认列表的列宽度为当前表头列名的宽度
++ 默认列表的宽度为当前表头的宽度，除非表头的宽度大于窗体宽度(此时显示水平滚动条)
++ 登录失败时不退出，而是将提示信息以红色字体显示于登录窗体
++ 给系统加上认证授权管理(权限控制)
+
+# 参考
+======
+* wxStocks
+* 晨星网
+* https://pythonspot.com/en/pyqt5/
+
+# 外观
+======
++ 标题栏的文本要居中
++ 列表界面的Header里的文字全部加粗或改成别的颜色？
++ 界面简洁化，平面化
++ 配色柔和
+
+# 技术
+======
++ 引入SQLAlchemy来做O-R Mapping
++ 支持Postgres数据库
++ 将界面的顶层选项卡从主窗口分离出来，以方便维护与扩展
++ 引入JSON库
++ 前后台通讯使用JSON格式的数据来进行交互
++ 引入logging
++ 尝试用打包工具将整个系统打包成exe
++ 针对service层编写单元测试
++ 适当时候将该系统中的PyQt迁移到PySide(尽量使用支持Qt5的PySide)
++ 尝试实现i18n语言文件来支持多国语言

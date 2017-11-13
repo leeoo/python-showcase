@@ -1,0 +1,12 @@
+Python 3.4.1 +
+
+PyQt 5.3.1 +
+
+pg8000
+
+SQLAlchemy 0.9.4 +
+
+Postgres 9.3 +
+
+Pip 1.5 +
+

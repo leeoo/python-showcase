@@ -1,0 +1,13 @@
+C:\Apply\Python\Python34\Lib\site-packages\PyQt5\pyuic5.bat xxx.ui -o xxx.py
+
+
+# 可以考虑将pyui5.bat脚本加入系统路径Path
+
+e.g.
+    C:\Apply\Python\Python34\Lib\site-packages\PyQt5\pyuic5.bat dashboard.ui -o dashboard.py
+    C:\Apply\Python\Python34\Lib\site-packages\PyQt5\pyuic5.bat account_edit_form.ui -o account_edit_form.py
+    C:\Apply\Python\Python34\Lib\site-packages\PyQt5\pyuic5.bat login_form.ui -o login_form.py
+
+
+    C:\Apply\Python\Python34\Lib\site-packages\PyQt5\pyuic5.bat main_form.ui -o main_form.py
+    C:\Apply\Python\Python34\Lib\site-packages\PyQt5\pyuic5.bat customTitleBar.ui -o customTitleBar.py

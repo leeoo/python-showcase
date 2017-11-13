@@ -1,0 +1,148 @@
+/***********************************************************************
+My Custom Qt Style Sheet
+尽量简洁，平面化。
+***********************************************************************/
+
+QPushButton {
+    color: #888888;
+    background-color: #CCCCCC;
+    border: none;
+    width: 40px;
+    height: 15px;
+    padding: 5px;
+    text-align: center
+}
+QPushButton:hover, QPushButton:pressed, QPushButton:checked {
+    color: #BBBBBB;
+    background-color: #999999;
+    font: bolder;
+    font-weight: 30;
+}
+
+QLineEdit {
+    color: green
+}
+
+QComboBox {
+    color: blue
+}
+
+/********* 选项卡样式 **********/
+QTabWidget::pane {
+/*
+    border: 10px, 1px, 0, 0;
+    */
+    border: none;
+}
+QTabWidget::tab {
+/*
+    border: 10px, 1px, 0, 0;
+    border:none;
+    */
+}
+QTableWidget {
+    border: none;
+}
+
+
+/********* 垂直滚动条样式 **********/
+QScrollBar:vertical
+{
+    width:10px;
+    border: none;
+    margin:0px,0px,0px,0px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+QScrollBar::handle:vertical
+{
+    width:15px;
+    min-height:20;
+    background: #DDDDDD;
+    border: none;
+    /* 滚动条两端椭圆
+    border-radius:4px;
+    */
+}
+QScrollBar::handle:vertical::disabled
+{
+    background:#DDDDDD;
+}
+QScrollBar::handle:vertical:hover
+{
+    background:#CCCCCC;
+    border: none;
+}
+QScrollBar::add-line:vertical
+{
+    height:10px;
+    background:#EEEEEE;
+    subcontrol-position:bottom;
+}
+QScrollBar::sub-line:vertical
+{
+    height:10px;
+    background:#EEEEEE;
+    subcontrol-position:top;
+}
+QScrollBar::add-page:vertical
+{
+    background: #EEEEEE;
+}
+QScrollBar::sub-page:vertical
+{
+    background: #EEEEEE;
+}
+
+
+/********* 水平滚动条样式 **********/
+QScrollBar:horizontal
+{
+    height:10px;
+    border: none;
+    margin:0px,0px,0px,0px;
+    padding-left:10px;
+    padding-right:10px;
+}
+QScrollBar::handle:horizontal
+{
+    height:15px;
+    min-width:20;
+    background:#DDDDDD;
+    border: none
+}
+QScrollBar::handle:horizontal::disabled
+{
+    background:#DDDDDD;
+}
+QScrollBar::handle:horizontal:hover
+{
+    background:#CCCCCC;
+    border:none;
+}
+QScrollBar::add-line:horizontal
+{
+    width:10px;
+    background:#EEEEEE;
+    subcontrol-position:right;
+}
+QScrollBar::sub-line:horizontal
+{
+    width:10px;
+    background:#EEEEEE;
+    subcontrol-position:left;
+}
+QScrollBar::add-page:horizontal
+{
+    background: #EEEEEE;
+}
+
+QScrollBar::sub-page:horizontal
+{
+    background: #EEEEEE;
+}
+QScrollBar::up-arrow:horizontal
+{
+    border-style:outset;
+    border: none;
+}

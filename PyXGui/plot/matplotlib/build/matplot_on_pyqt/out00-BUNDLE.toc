@@ -1,0 +1,3 @@
+([('matplot_on_pyqt',
+   '/Users/libo/workshop/Python/PyXGui/plot/matplotlib/dist/matplot_on_pyqt',
+   'EXECUTABLE')],)
